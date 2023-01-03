@@ -1,12 +1,12 @@
 import React from 'react'
-
+import Logo from '../images/daniel-carmona-DxnDLYFbXik-unsplash.jpg'
 
 const Navbar = () => {
 
     return (
         <div className="flex justify-between items-center bg-gray-900 fixed inset-x-0 z-40">
             <div className="">
-          
+            <img className="w-20 px-2 mt-6" src={Logo}></img>
             </div>
             <div className="flex flex-row items-center justify-center">
                 <a href="#bio" className="px-4 text-white hover:text-red-700 hover:text-lg">About</a>
