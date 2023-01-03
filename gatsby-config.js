@@ -8,5 +8,15 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  siteMetadata: {
+title: 'Candice Hughes',
+author: 'Web For Professionals',
+description: 'Time for harmless escapism',
+website: 'https://webforprofessionals.com'
+  },
+  plugins: [
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    'gatsby-plugin-postcss'
+  ],
 }

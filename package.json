@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env gatsby develop",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -14,8 +14,12 @@
   },
   "dependencies": {
     "gatsby": "^5.3.3",
+    "gatsby-plugin-react-helmet": "^6.3.0",
+    "gatsby-plugin-sass": "^6.3.1",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "repository": {
     "type": "git",
@@ -23,5 +27,12 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "env-cmd": "^10.1.0",
+    "gatsby-plugin-postcss": "^6.3.0",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }

@@ -1,0 +1,10 @@
+.fadein {
+    color: white;
+    text-align: center;
+    animation: fade-in 10s linear;
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
